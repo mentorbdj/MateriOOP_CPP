@@ -33,6 +33,10 @@ public:
     }
 };
 
+class Kucing : public Hewan {
+
+};
+
 
 int main()
 {
