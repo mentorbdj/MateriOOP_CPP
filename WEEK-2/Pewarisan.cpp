@@ -8,7 +8,12 @@ private:
     string nama; // atribute
     
 public:
-	
+	// constructor
+        Hewan()
+        {
+            cout << "Kelas Hewan Dibuat" << endl;
+        }
+
 	string getNama()
 	{
 		return nama;
@@ -48,6 +53,12 @@ public:
 class Kucing : public Hewan {
 	
 	public:
+        // constructor
+        Kucing(string namaHewan)
+        {
+            Hewan::setNama(namaHewan);
+        }
+
 		void jatuhGedungTinggi()
 		{
 			cout << getNama() <<" Masih Selamat Guys"<< endl;
@@ -68,9 +79,7 @@ class Tikus : public Hewan {
 int main()
 {
 	
-	Kucing kucingAnggora;
-	
-	kucingAnggora.setNama("Anggora");
+	Kucing kucingAnggora("Anggora");
 	
 	kucingAnggora.jatuhGedungTinggi();
     
