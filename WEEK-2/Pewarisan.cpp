@@ -4,10 +4,22 @@ using namespace std;
 
 class Hewan
 {
+private:
+    string nama; // atribute
+    
 public:
-    string nama, warna, jenis_kelamin, suara; // atribute
-
-    void berlari() 
+	
+	string getNama()
+	{
+		return nama;
+	}
+	
+	void setNama(string paramterNama)
+	{
+		nama = paramterNama;
+	}
+	
+	void berlari() 
     {
         cout << nama << " Berlari!"<<endl;
     }
@@ -38,7 +50,7 @@ class Kucing : public Hewan {
 	public:
 		void jatuhGedungTinggi()
 		{
-			cout << nama <<" Masih Selamat Guys"<< endl;
+			cout << getNama() <<" Masih Selamat Guys"<< endl;
 		}
 
 };
@@ -48,7 +60,7 @@ class Tikus : public Hewan {
 
         void menggaliLubang()
         {
-            cout << nama << " Menggali Lubang Tikus" << endl;
+            cout << getNama() << " Menggali Lubang Tikus" << endl;
         }
 };
 
@@ -58,7 +70,7 @@ int main()
 	
 	Kucing kucingAnggora;
 	
-	kucingAnggora.nama = "Anggora";
+	kucingAnggora.setNama("Anggora");
 	
 	kucingAnggora.jatuhGedungTinggi();
     
