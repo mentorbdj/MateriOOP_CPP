@@ -34,12 +34,33 @@ public:
 };
 
 class Kucing : public Hewan {
+	
+	public:
+		void jatuhGedungTinggi()
+		{
+			cout << nama <<" Masih Selamat Guys"<< endl;
+		}
 
+};
+
+class Tikus : public Hewan {
+    public:
+
+        void menggaliLubang()
+        {
+            cout << nama << " Menggali Lubang Tikus" << endl;
+        }
 };
 
 
 int main()
 {
+	
+	Kucing kucingAnggora;
+	
+	kucingAnggora.nama = "Anggora";
+	
+	kucingAnggora.jatuhGedungTinggi();
     
     return 0;
 
