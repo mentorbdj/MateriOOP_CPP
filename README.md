@@ -2,10 +2,10 @@
 
 Materi OOP STMIK INDONESIA BJM (ASLAB)
 
-WEEK #1
+Day #1
 - Class dan Object
 
-WEEK #2
+Day #2
 - Constructor
 - Argument dan Parameter
 - Setter and Getter (Enkapsulasi)
