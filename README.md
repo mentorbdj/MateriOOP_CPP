@@ -8,3 +8,4 @@ WEEK #1
 WEEK #2
 - Constructor
 - Argument dan Parameter
+- Setter and Getter (Enkapsulasi)
